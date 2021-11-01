@@ -7,7 +7,7 @@
  <script>
    function doDate() 
   {
-    var timer = "";
+    var time = "";
 
 
     var currentTime = new Date(); 
@@ -15,8 +15,8 @@
     var hours = currentTime.getHours() 
    if( hours > 12) { hours-= 12;} else if (hours == 0) { hours = 12; } 
  
-    timer += hours +":" + currentTime.getMinutes() + ":" + currentTime.getSeconds(); 
-    document.getElementById("timeNow").innerHTML = timer; 
+    timer = hours +":" + currentTime.getMinutes() + ":" + currentTime.getSeconds(); 
+    document.getElementById("timeNow").innerHTML = time; 
 }
   
  
