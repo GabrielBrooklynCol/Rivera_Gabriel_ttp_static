@@ -15,8 +15,9 @@
 
 
     var currentTime = new Date();
-
-    time += currentTime.getHours() +":" + currentTime.getMinutes() + ":" + currentTime.getSeconds();
+    var hours = currentTime.getHours()
+   if( currentTime.getHours() > 12) { hours-= 12} else if (currentTime.getHours() == 0) { hours = 12; }
+    time += currentTime.getHours()  +":" + currentTime.getMinutes() + ":" + currentTime.getSeconds();
     document.getElementById("CurrentTime").innerHTML = time;
 }
 setInterval(doDate, 1000);
