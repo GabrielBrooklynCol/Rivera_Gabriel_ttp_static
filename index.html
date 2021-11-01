@@ -17,10 +17,10 @@
   //they make sure the hours respect the 12 hour format. Once the getHours() past 12, It will subtract the hours var by the getHours().
   //If getHours() is 0, then the hours var will be 12.
     time += hours +":" + currentTime.getMinutes() ":" + currentTime.getSeconds(); 
-    document.getElementById("CurrentTime").innerHTML = time; //Displaying time
+    document.getElementById("timeNow).innerHTML = time; //Displaying time
 }
 setInterval(doDate, 1000); //This will allow our time to be incremented without having to reset the browser/press a button.
 </script>
-  <h1> The current time is: <div id="CurrentTime"></div></h1> 
+  <h1> The current time is: <div id="timeNow"></div></h1> 
 </body>
 </html>
