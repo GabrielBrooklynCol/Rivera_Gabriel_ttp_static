@@ -1,19 +1,4 @@
+var today = new Date();
 
-<html>
-
-<head>
-<h1>Boys</h1>
-</head>
-<body>
-
-<script>
-
-
-
-
-    
-</script>
-</body>
-
-
-</html>
+var date = today.getFullYear();
+document.getElementById("p1").innerHTML = date;
