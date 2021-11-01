@@ -17,9 +17,9 @@
   //they make sure the hours respect the 12 hour format. Once the getHours() past 12, It will subtract the hours var by the getHours().
   //If getHours() is 0, then the hours var will be 12.
    var minutes = currentTime.getMinutes();
-   if (CurrentTime.getMinutes() < 10) { minutes = "0" + minutes; }
+   if (CurrentTime.getMinutes() < 10) { minutes = "0" + CurrentTime.getMinutes(); }
    var seconds = currentTime.getSeconds();
-     if (CurrentTime.getSeconds() < 10) { seconds = "0" + seconds; }
+     if (CurrentTime.getSeconds() < 10) { seconds = "0" + CurrentTime.getSeconds(); }
     time += hours +":" +minutes+ ":" + seconds; 
     document.getElementById("CurrentTime").innerHTML = time; //Displaying time
 }
