@@ -16,11 +16,7 @@
    if( currentTime.getHours() > 12) { hours-= 12} else if (currentTime.getHours() == 0) { hours = 12; } // As you can see by these conditionals
   //they make sure the hours respect the 12 hour format. Once the getHours() past 12, It will subtract the hours var by the getHours().
   //If getHours() is 0, then the hours var will be 12.
-   var minutes = currentTime.getMinutes();
-   if (CurrentTime.getMinutes() < 10) { minutes = "0" + CurrentTime.getMinutes(); }
-   var seconds = currentTime.getSeconds();
-     if (CurrentTime.getSeconds() < 10) { seconds = "0" + CurrentTime.getSeconds(); }
-    time += hours +":" +minutes+ ":" + seconds; 
+    time += hours +":" + currentTime.getMinutes() ":" + currentTime.getSeconds(); 
     document.getElementById("CurrentTime").innerHTML = time; //Displaying time
 }
 setInterval(doDate, 1000); //This will allow hour time to be incremented without having to reset the browser/press a button.
