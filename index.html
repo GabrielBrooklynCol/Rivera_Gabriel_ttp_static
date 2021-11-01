@@ -8,8 +8,8 @@
   //setInterval( () => console.log(new Date().toLocaleTimeString()), 1000);
   var today = new Date();
 var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-  <p> time; </p>
+  document.getElementById("CurrentTime").innerHTML = time;
 </script>
-
+<div id="CurrentTime"></div>
 </body>
 </html>
