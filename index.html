@@ -17,7 +17,7 @@
     var currentTime = new Date();
 
     time += currentTime.getHours() +":" + currentTime.getMinutes() + ":" + currentTime.getSeconds();
-    document.getElementById("CurrentTime").innerHTML = str;
+    document.getElementById("CurrentTime").innerHTML = time;
 }
 setInterval(doDate, 1000);
 </script>
